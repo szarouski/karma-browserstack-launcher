@@ -110,8 +110,8 @@ var BrowserStackBrowser = function(id, emitter, args, logger,
       project: bsConfig.project,
       name: bsConfig.name || 'Karma test',
       build: bsConfig.build || process.env.TRAVIS_BUILD_NUMBER || process.env.BUILD_NUMBER ||
-             process.env.BUILD_TAG || process.env.CIRCLE_BUILD_NUM || null
-    };
+      process.env.BUILD_TAG || process.env.CIRCLE_BUILD_NUM || null
+    });
 
     this.url = url;
     tunnel.then(function() {
